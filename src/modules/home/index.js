@@ -73,7 +73,7 @@ const Home = () => {
     return (
       <div className={classes.root}>
         <Grid container spacing={3}>
-          <Grid item xs={12} sm={6} md={4} lg={2}>
+          <Grid item xs={12} sm={6} md={3} lg={2}>
             <Paper className={classes.paper}>
               <ProductFilters
                 filterParam={filterParam}
@@ -81,11 +81,11 @@ const Home = () => {
               />
             </Paper>
           </Grid>
-          <Grid item xs={12} sm={6} md={8} lg={10}>
+          <Grid item xs={12} sm={6} md={9} lg={10}>
             <Paper className={classes.paper}>
-              {data.length ? <Grid container spacing={6}>
+              {data.length ? <Grid container spacing={5}>
                 {data.map(ele =>
-                  <Grid item xs={12} md={6} lg={3} key={ele.productId} className={classes.card}>
+                  <Grid item xs={12} sm={12} md={6} lg={3} key={ele.productId} className={classes.card}>
                     <ProductCard
                       product={ele}
                     />
