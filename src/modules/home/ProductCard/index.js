@@ -12,7 +12,6 @@ export default function ProductCard({ product }) {
                 <CardMedia
                     className={classes.media}
                     image={searchImage}
-                    title="Contemplative Reptile"
                 />
                 <CardContent className={classes.cardContent}>
                     <h3 className={classes.productBrand}>{brand}</h3>

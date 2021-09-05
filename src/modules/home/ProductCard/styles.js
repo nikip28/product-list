@@ -2,17 +2,8 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
     media: {
-        // height: 250,
         height: 0,
         paddingTop: '100%',
-        // display: 'block',
-        // marginLeft: 'auto',
-        // marginRight: 'auto',
-        // width: '50%',
-        // "&img": {
-        //     width: 60%;
-        //     height: 500px;
-        // }
         "&.MuiCardMedia-root": {
             backgroundPosition: "unset"
         }

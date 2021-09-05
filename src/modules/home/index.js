@@ -63,7 +63,10 @@ const Home = () => {
   const data = search(items);
 
   if (error) {
-    return <>Got an error: {error.message}</>;
+    return <>
+      Got an error. Please try again.<br />
+      Error message: {error.message}
+    </>;
   } else if (!isLoaded) {
     return <Spinner />;
   } else {
